@@ -45,9 +45,9 @@ class MysqlConf:
     SQLALCHEMY_COMMIT_TEARDOWN = True
 
 WEIXIN_CONF = dict(
-    WEIXIN_APP_ID = "wx5506ffc2f48719b5",
-    WEIXIN_APP_SECRET = "dc7be83ea8822a08167db78b87cc1c73",
-    MCH_ID = "1500104442",
+    WEIXIN_APP_ID = "",
+    WEIXIN_APP_SECRET = "",
+    MCH_ID = "",
     MCH_KEY = 'pass',
     WEIXIN_NOTIFY_URL="",
     WEIXIN_MCH_KEY_FILE="",
