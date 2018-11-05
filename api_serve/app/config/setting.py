@@ -50,8 +50,8 @@ class MysqlConf:
 WEIXIN_CONF = dict(
     WEIXIN_APP_ID = "",
     WEIXIN_APP_SECRET = "",
-    MCH_ID = "1500104442",
-    MCH_KEY = 'pass',
+    MCH_ID = "",
+    MCH_KEY = "",
     WEIXIN_NOTIFY_URL="",
     WEIXIN_MCH_KEY_FILE="",
     WEIXIN_MCH_CERT_FILE=""
