@@ -16,10 +16,10 @@ SECRET_KEY = os.urandom(24)
 
 REDIS_CONFIG = {
   'CACHE_TYPE': 'redis',
-  'CACHE_REDIS_HOST': '192.168.6.92',
+  'CACHE_REDIS_HOST': '',
   'CACHE_REDIS_PORT': 6379,
   'CACHE_REDIS_DB': '',
-  'CACHE_REDIS_PASSWORD': '123456'
+  'CACHE_REDIS_PASSWORD': ''
 }
 
 
@@ -27,15 +27,15 @@ class MysqlConf:
     '''
     mysql 配置
     '''
-    DB_USER = 'root'
+    DB_USER = ''
 
-    DB_PASS = '123456'
+    DB_PASS = ''
 
-    DB_HOST = '192.168.6.92'
+    DB_HOST = ''
 
-    DB_PORT = '3306'
+    DB_PORT = ''
 
-    DB_NAME = 'test'
+    DB_NAME = ''
 
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8".format(DB_USER, DB_PASS, DB_HOST, DB_PORT,
                                                                                    DB_NAME)
@@ -48,7 +48,7 @@ WEIXIN_CONF = dict(
     WEIXIN_APP_ID = "",
     WEIXIN_APP_SECRET = "",
     MCH_ID = "",
-    MCH_KEY = 'pass',
+    MCH_KEY = '',
     WEIXIN_NOTIFY_URL="",
     WEIXIN_MCH_KEY_FILE="",
     WEIXIN_MCH_CERT_FILE=""
@@ -59,7 +59,7 @@ WEIXIN_CONF = dict(
 
 class CsrfConf:
     '''csrf配置'''
-    WTF_CSRF_ENABLED = False
+    WTF_CSRF_ENABLED = True
 
 #异步celery
 #REDIS_URI = "redis://:123456@192.168.6.182:6379/0"
